@@ -114,7 +114,7 @@
     /* smaller font */
     text-decoration: none;
     color: var(--white) !important;
-    background-color: var(--main-color) !important;
+    background-color: var(--main-ncolor) !important;
     font-weight: bold;
     transition: color 0.3s ease;
 }
