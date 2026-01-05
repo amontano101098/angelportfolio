@@ -1,0 +1,41 @@
+/* NAVIGATION BAR */
+/* --- Center navbar-brand only --- */
+.navbar-collapse.collapse.show {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.navbar-brand {
+    position: absolute;
+    /* allow centering inside nav */
+    top: 50%;
+    /* move to vertical middle */
+    left: 50%;
+    /* move to horizontal middle */
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    /* override display:block if needed */
+}
+
+/*--- Underline nav links when hover and active*/
+/* Underline when hovering over links */
+.navbar-nav .nav-link {
+    text-decoration: none;
+    /* no underline by default */
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    /* optional: lowers underline for a cleaner look */
+}
+
+/* Keep underline on the active link */
+.navbar-nav .nav-link.active {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: #0d6efd;
+    /* optional: Bootstrap primary color */
+}

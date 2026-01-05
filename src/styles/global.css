@@ -1,0 +1,32 @@
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    background-color: #f8f9fa;
+    /* same as navbar */
+}
+
+body {
+    padding-top: 80px;
+    /* adjust to your navbar height */
+}
+
+/*VARIABLES*/
+:root {
+    --main-color: #62b6cb;
+    --light-color: #bee9e8;
+    --white: #ffffff;
+    --black: #000000;
+}
